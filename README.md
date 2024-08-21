@@ -8,7 +8,8 @@ Glancefy is an AI-driven automated news aggregation platform designed to offer u
 - **pnpm**: A fast, disk space efficient package manager.
 - **TypeScript**: A statically typed language that builds on JavaScript.
 - **Vitest**: A fast and type-safe test framework.
-- **Zustand**: A small, fast, and scalable state management solution.
+- **React-Query**: A data-fetching library for React.
+- **Axios**: A promise-based HTTP client.
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 
 ## Getting Started

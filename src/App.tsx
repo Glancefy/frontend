@@ -1,11 +1,13 @@
-import ArticleList from "./components/ArticleList";
+import MainPage from "./components/mainPage/MainPage";
+import Navbar from "./components/navbar/Navbar";
+import { ThemeProvider } from "./components/theme-provider";
 
 function App() {
   return (
-    <div>
-      <h1>Articles</h1>
-      <ArticleList />
-    </div>
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+      <Navbar />
+      <MainPage />
+    </ThemeProvider>
   );
 }
 
