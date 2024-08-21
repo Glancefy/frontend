@@ -1,5 +1,4 @@
-﻿import React from "react";
-import Logo from "./Logo";
+﻿import Logo from "./Logo";
 import { ModeToggle } from "@/components/mode-toggle";
 
 function Navbar() {
@@ -11,11 +10,12 @@ function Navbar() {
     <div
       className="flex items-center justify-between h-16
     bg-slate-200 border-b border-slate-300 px-4
-    dark:bg-slate-900 dark:border-slate-700"
+    dark:bg-slate-900 dark:border-slate-700
+    transition-colors duration-150 ease-in-out
+    "
     >
       <div
         className="flex items-center pr-3
-        transition duration-300 ease-in-out
       hover:cursor-pointer hover:text-slate-700
       dark:hover:text-slate-300
       "

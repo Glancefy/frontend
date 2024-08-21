@@ -1,22 +1,15 @@
-﻿import { retrievePostsSample } from "@/lib/articleAPI";
-import { useQuery } from "@tanstack/react-query";
-import ArticleListItem from "@/components/mainPage/ArticleListItem";
+﻿import ArticleListItem from "@/components/mainPage/ArticleListItem";
+import { Posts } from "@/types";
+import ArticleListOptions from "./ArticleListOptions";
 
-function ArticleList() {
-  const {
-    data: posts,
-    error,
-    isLoading,
-  } = useQuery({
-    queryKey: ["posts"],
-    queryFn: retrievePostsSample,
-  });
+interface ArticleListProps {
+  posts?: Posts;
+}
 
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
-
+function ArticleList({ posts }: ArticleListProps) {
   return (
-    <div>
+    <div className="flex flex-col lg:w-1/2 min-h-fit space-y-4 md:w-3/5 w-full">
+      <ArticleListOptions />
       {posts?.map((post) => (
         <ArticleListItem key={post.id} post={post} />
       ))}

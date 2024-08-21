@@ -2,6 +2,9 @@
   id: number;
   title: string;
   body: string;
+  date: string;
+  source: string;
+  reports: number;
 }
 
 export type Posts = Post[];

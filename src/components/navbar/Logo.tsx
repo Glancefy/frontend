@@ -1,5 +1,4 @@
-﻿import React from "react";
-import glancefy_logo from "../../assets/glancefy_logo.svg";
+﻿import glancefy_logo from "../../assets/glancefy_logo.svg";
 
 function Logo() {
   return (
