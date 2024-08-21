@@ -1,7 +1,10 @@
+import ArticleList from "./components/ArticleList";
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">Hello, Glancefy!</h1>
+    <div>
+      <h1>Articles</h1>
+      <ArticleList />
     </div>
   );
 }
